@@ -43,7 +43,7 @@ async def send_photo(photo_bytes, caption):
 async def handler(event):
     try:
         message = event.message
-        resend = True
+        resend = False
         
         if message.message is not None:
             for phrase in FILTER_PHRASE:
