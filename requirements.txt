@@ -1,0 +1,5 @@
+asyncio==3.4.3
+dotenv==0.9.9
+python-dotenv==1.1.0
+requests==2.32.3
+Telethon==1.40.0
