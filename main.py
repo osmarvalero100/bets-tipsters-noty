@@ -47,7 +47,7 @@ async def handler(event):
         
         if message.message is not None:
             for phrase in FILTER_PHRASE:
-                if phrase.lower() in message.message.lower():  # Corregido: el orden de comprobación
+                if phrase.lower() in message.message.lower() and 'https://t.me/+' not in message.message.lower() and 'https://shops.kunfupay' not in message.message.lower():  # Corregido: el orden de comprobación
                     resend = True
                     break
                 
